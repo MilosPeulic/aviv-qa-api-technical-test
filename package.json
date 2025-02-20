@@ -25,6 +25,7 @@
     "@types/supertest": "^6.0.2",
     "@types/swagger-ui-express": "^4.1.7",
     "@types/yamljs": "^0.2.34",
+    "faker": "^6.6.6",
     "jest": "^27.0.6",
     "supertest": "^7.0.0",
     "ts-jest": "^27.0.6",
