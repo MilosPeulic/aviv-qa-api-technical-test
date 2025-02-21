@@ -7,6 +7,7 @@ import { UpdateBookPage } from "../api/updateBookPage";
 import { RemoveBookPage } from "../api/removeBookPage";
 import { PartiallyUpdateBookPage } from "../api/partiallyUpdateBookPage";
 import { CheckHealthPage } from "../api/checkHealthPage";
+import { InvalidApiCallsPage } from "../api/inavlidApiCallsPage";
 
 const testPages = baseTest.extend({
   welcomePage: async ({ page }, use) => {
@@ -32,6 +33,9 @@ const testPages = baseTest.extend({
   },
   checkHealth: async ({ page }, use) => {
     await use(new CheckHealthPage(page));
+  },
+  invalidApiCalls: async ({ page }, use) => {
+    await use(new InvalidApiCallsPage(page));
   },
 });
 
